@@ -1,3 +1,66 @@
 body {
-  background: white;
+    background: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 2fr 2fr 4fr 2fr 2fr;
+    gap: 5px;
+    box-sizing: content-box;
+    height: 300px;
+}
+
+p {
+    margin: auto;
+    transform: rotate(-45deg);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+}
+
+.diamond {
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+}
+
+.item:nth-child(1) {
+    background-color: rgb(200, 7, 218);
+    grid-column: 1/ span 1;
+    grid-row: 1;
+}
+
+.item:nth-child(2) {
+    background-color: rgb(220, 95, 54);
+    grid-column: 1/ span 1;
+    grid-row: 2;
+}
+
+.item:nth-child(3) {
+    background-color: rgb(56, 181, 21);
+    grid-column: 2/ span 2;
+    grid-row: 1/ span 2;
+}
+
+.item:nth-child(4) {
+    background-color: rgb(52, 148, 195);
+    grid-column: 4/ span 1;
+    grid-row: 1/ span 2;
+}
+
+.item:nth-child(5) {
+    background-color: rgb(185, 50, 212);
+    grid-column: 5/ span 1;
+    grid-row: 1/ span 2;
 }
