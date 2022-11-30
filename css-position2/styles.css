@@ -1,28 +1,51 @@
 body {
-  margin: 0;
-  padding: 10em;
-  background-color: white;
+    margin: 0;
+    padding: 10em;
+    background-color: white;
+}
+
+.container0 {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-areas: "hello hello " "today today today " "walk walk walk walk ";
+    margin: 20%;
+    width: 80vw;
 }
 
 .container1 {
-  background-color: black;
-  padding: 3em;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
 }
 
 .container1 :nth-child(1) {
-  background-color: rgb(136, 246, 111);
+    background-color: rgb(154, 244, 134);
+    width: fit-content;
+    grid-area: hello;
 }
 
 .container1 :nth-child(2) {
-  background-color: rgb(86, 213, 60);
+    background-color: rgb(86, 213, 60);
+    width: fit-content;
+    grid-area: today;
 }
 
 .container1 :nth-child(3) {
-  background-color: rgb(42, 144, 22);
+    background-color: rgb(42, 144, 22);
+    width: fit-content;
+    grid-area: walk;
 }
 
 .container2 {
-  background-image: url("avatar.png");
-  height: 10em;
-  width: 10em;
+    background-image: url("./avatar.png");
+    height: 10em;
+    width: 10em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 46%;
+    top: 22%;
 }
