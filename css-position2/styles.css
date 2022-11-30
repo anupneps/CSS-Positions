@@ -42,10 +42,12 @@ body {
 .container2 {
     background-image: url("./avatar.png");
     height: 10em;
-    width: 10em;
+    width: 12em;
     background-repeat: no-repeat;
     background-size: contain;
+    transform: translateY(-60%);
+    background-position: top;
     position: absolute;
-    left: 46%;
-    top: 22%;
+    margin: 0 auto;
+    left: 45%;
 }
